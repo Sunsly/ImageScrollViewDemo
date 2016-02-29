@@ -8,20 +8,49 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+#import "SunshineScrollView.h"
 
+@interface ViewController ()<SunshineScrollViewDelegate>
+{
+    SunshineScrollView *vc;
+    BOOL isyes;
+}
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    vc = [[SunshineScrollView alloc]initWithFrame:CGRectMake(0,0, self.view.frame.size.width    , self.view.frame.size.height-400)];
+    vc.delegate = self;
+    isyes = YES;
+    [self.view addSubview:vc];
 }
 
+-(void)clickImageIndex:(NSInteger)imageIndex
+{
+NSLog(@"%ld",imageIndex);
+}
+
+
+- (void)pp
+{
+
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)click:(id)sender {
+   
+    if (isyes) {
+        [vc updateImageData:@[[UIColor redColor],[UIColor blackColor],[UIColor orangeColor],[UIColor yellowColor],[UIColor lightGrayColor],[UIColor greenColor]]];
+        isyes = NO;
+    } else {
+      [vc updateImageData:@[[UIColor redColor],[UIColor blackColor],[UIColor orangeColor]]];
+        isyes = YES;
+    }
+    
+    
+}
 @end

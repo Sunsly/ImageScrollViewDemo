@@ -15,6 +15,8 @@
 		A50369721C59B0D40080F86A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50369701C59B0D40080F86A /* LaunchScreen.storyboard */; };
 		A503697D1C59B0D40080F86A /* ImageScrollViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A503697C1C59B0D40080F86A /* ImageScrollViewDemoTests.m */; };
 		A50369881C59B0D40080F86A /* ImageScrollViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A50369871C59B0D40080F86A /* ImageScrollViewDemoUITests.m */; };
+		A50369971C59B1150080F86A /* SunshineScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A50369961C59B1150080F86A /* SunshineScrollView.m */; };
+		A503699D1C59ED280080F86A /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A503699C1C59ED280080F86A /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		A50369831C59B0D40080F86A /* ImageScrollViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageScrollViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50369871C59B0D40080F86A /* ImageScrollViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageScrollViewDemoUITests.m; sourceTree = "<group>"; };
 		A50369891C59B0D40080F86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50369951C59B1150080F86A /* SunshineScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunshineScrollView.h; sourceTree = "<group>"; };
+		A50369961C59B1150080F86A /* SunshineScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunshineScrollView.m; sourceTree = "<group>"; };
+		A503699B1C59ED280080F86A /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		A503699C1C59ED280080F86A /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				A50369661C59B0D40080F86A /* AppDelegate.m */,
 				A50369681C59B0D40080F86A /* ViewController.h */,
 				A50369691C59B0D40080F86A /* ViewController.m */,
+				A50369951C59B1150080F86A /* SunshineScrollView.h */,
+				A50369961C59B1150080F86A /* SunshineScrollView.m */,
+				A503699B1C59ED280080F86A /* UIView+Frame.h */,
+				A503699C1C59ED280080F86A /* UIView+Frame.m */,
 				A503696B1C59B0D40080F86A /* Main.storyboard */,
 				A503696E1C59B0D40080F86A /* Assets.xcassets */,
 				A50369701C59B0D40080F86A /* LaunchScreen.storyboard */,
@@ -275,6 +285,8 @@
 			files = (
 				A503696A1C59B0D40080F86A /* ViewController.m in Sources */,
 				A50369671C59B0D40080F86A /* AppDelegate.m in Sources */,
+				A50369971C59B1150080F86A /* SunshineScrollView.m in Sources */,
+				A503699D1C59ED280080F86A /* UIView+Frame.m in Sources */,
 				A50369641C59B0D40080F86A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
